@@ -1,0 +1,78 @@
+<!-- <p>student-dashboard works!</p> -->
+
+<nav class="navbar" style="background-color: orange">
+    <div class="container-fluid">
+        <a class="navbar-brand" style="color: white">Student Record</a>
+        <div class="d-flex" role="search">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn btn btn-dark" type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                (click)="clickAddEmploy()" style="margin: auto 5px">Add Student</button>
+            <button class="btn btn btn-success" type="submit" [routerLink]="'/login'">Log Out</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table table-responsive mt-3">
+    <thead>
+        <tr>
+            <td scope="col">Student ID</td>
+            <td scope="col">First Name</td>
+            <td scope="col">Last Name</td>
+            <td scope="col">Email Address</td>
+            <td scope="col"> Actions</td>
+            <!-- <td scope= "col"></td> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of studentData">
+            <td>{{i.id}}</td>
+            <td>{{i.firstname}}</td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.email}}</td>
+            <td>
+                <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)=onEdit(i)>Edit</button>
+                <button class = "btn btn-outline-danger" (click)="deletestudent(i)">Delete</button>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Enter Student Data</h5>
+                <button type="button" id="close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- ... -->
+                <form [formGroup]="myform">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">First Name</label>
+                        <input type="text" formControlName="firstname" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                        <input type="name" formControlName="lastname" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Email Address</label>
+                        <input type="email" formControlName="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)=postdetails() *ngIf="showAdd">Add</button>
+                <button type="button" class="btn btn-primary" (click)=updatestudent() *ngIf="showUpdate">Update</button>
+            </div>
+        </div>
+    </div>
+</div>

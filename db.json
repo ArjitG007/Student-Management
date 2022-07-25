@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": 7,
+      "firstname": "Arjit",
+      "lastname": "gupta",
+      "email": "arrr@gmial.com"
+    },
+    {
+      "id": 8,
+      "firstname": "Riddhi-Siddhi Ji",
+      "lastname": "Ganesh Ji"
+    },
+    {
+      "id": 9,
+      "firstname": "Laxmi Ji",
+      "lastname": "Vishnu Ji"
+    },
+    {
+      "id": 10,
+      "firstname": "Radha Ji",
+      "lastname": "Krishn Ji"
+    },
+    {
+      "id": 12,
+      "firstname": "Ladoo",
+      "lastname": "Gopal Ji"
+    },
+    {
+      "id": 13,
+      "firstname": "arjitgupta24@gmail.com",
+      "lastname": "arjit",
+      "email": "email"
+    },
+    {
+      "id": 15,
+      "firstname": "Arvind",
+      "lastname": "Gupta",
+      "email": "ar@bk"
+    },
+    {
+      "id": 16,
+      "firstname": "a",
+      "lastname": "arjit",
+      "email": "arjit"
+    },
+    {
+      "id": 17,
+      "firstname": "Manoj",
+      "lastname": "Kumar",
+      "email": "manoj@bk"
+    }
+  ],
+  "SignupUsers": [
+    {
+      "name": "arjit",
+      "number": "m",
+      "email": "k",
+      "password": "m",
+      "id": 1
+    },
+    {
+      "name": "Gupta",
+      "number": "a",
+      "email": "a",
+      "password": "a",
+      "id": 2
+    },
+    {
+      "name": "arjit",
+      "number": "a",
+      "email": "a",
+      "password": "a",
+      "id": 3
+    },
+    {
+      "name": "Arjit Gupta",
+      "number": "6387125220",
+      "email": "arjitgupta24@gmail.com",
+      "password": "password",
+      "id": 4
+    },
+    {
+      "name": "A",
+      "number": 1,
+      "email": "1",
+      "password": "1",
+      "id": 5
+    },
+    {
+      "name": "BK",
+      "number": 1,
+      "email": "1",
+      "password": "1",
+      "id": 6
+    },
+    {
+      "name": "Manoj",
+      "number": 12345,
+      "email": "manoj@bk.com",
+      "password": "12345",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

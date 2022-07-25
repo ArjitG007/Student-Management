@@ -11,19 +11,23 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { EvaluateComponent } from './evaluate/evaluate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentDashboardComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    EvaluateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    
     
   ],
   providers: [],

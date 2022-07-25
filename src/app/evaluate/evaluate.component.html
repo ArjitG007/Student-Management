@@ -1,0 +1,16 @@
+<div class="card">
+  <form #form="ngForm" >
+    <div class="form-group">
+      <label for="exampleInputEmail1">Enter Expression Here -> </label>
+      <input type="text" [(ngModel)]="expression" name="expression" placeholder="Expression..">
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="isValid()">Submit</button>
+  </form>
+<br>
+  <div>
+    <P><i>Answer is : </i> <b>{{a}}</b></P>
+  </div>
+
+</div>
